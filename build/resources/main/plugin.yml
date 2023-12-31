@@ -1,0 +1,10 @@
+name: HappyNewYear
+main: kr.pak.Main
+version: 1.0
+api-version: 1.20
+description: Arena Plugin
+author: PPark8093
+commands:
+  realtime:
+    description: Get Real Time (Not Minecraft World Time!)
+    usage: /realtime

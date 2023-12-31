@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'io.papermc.paperweight.userdev' version '1.5.11'
+}
+
+group = 'kr.pak'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    paperweight.paperDevBundle('1.20.2-R0.1-SNAPSHOT')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    destinationDirectory.set(new File("C:\\Users\\parkj\\Desktop\\서버\\테스트 서버\\plugins"))
+}

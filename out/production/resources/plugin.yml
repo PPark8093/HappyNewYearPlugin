@@ -1,0 +1,6 @@
+name: Arena
+main: kr.pak.Main
+version: 1.0
+api-version: 1.20
+description: Arena Plugin
+author: PPark8093
